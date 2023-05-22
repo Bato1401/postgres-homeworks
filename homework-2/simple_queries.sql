@@ -1,6 +1,7 @@
 -- Напишите запросы, которые выводят следующую информацию:
 -- 1. "имя контакта" и "город" (contact_name, country) из таблицы customers (только эти две колонки)
-SELECT contact_name, country FROM customers;
+SELECT contact_name, country
+FROM customers;
 
 -- 2. идентификатор заказа и разницу между датами формирования (order_date) заказа и его отгрузкой (shipped_date) из таблицы orders
 SELECT order_id, ABS(order_date-shipped_date) as difference FROM orders;
